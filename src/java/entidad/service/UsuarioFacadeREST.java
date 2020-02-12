@@ -24,7 +24,7 @@ import javax.ws.rs.Produces;
  * @author agual
  */
 @Stateless
-@Path("usuario")
+@Path("user")
 public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
     @PersistenceContext(unitName = "chamboCRUDPU")
     private EntityManager em;

@@ -24,7 +24,7 @@ import javax.ws.rs.Produces;
  * @author agual
  */
 @Stateless
-@Path("imagen")
+@Path("image")
 public class ImagenFacadeREST extends AbstractFacade<Imagen> {
     @PersistenceContext(unitName = "chamboCRUDPU")
     private EntityManager em;

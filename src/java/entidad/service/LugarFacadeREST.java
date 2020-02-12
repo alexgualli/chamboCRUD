@@ -24,7 +24,7 @@ import javax.ws.rs.Produces;
  * @author agual
  */
 @Stateless
-@Path("lugar")
+@Path("places")
 public class LugarFacadeREST extends AbstractFacade<Lugar> {
     @PersistenceContext(unitName = "chamboCRUDPU")
     private EntityManager em;
