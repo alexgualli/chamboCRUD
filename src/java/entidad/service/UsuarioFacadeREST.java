@@ -39,6 +39,13 @@ public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
     public void create(Usuario entity) {
         super.create(entity);
     }
+    
+    @PUT
+    @Path("{correo}")    
+    @Consumes("application/json")
+    public Usuario login(@PathParam("{correo}") String correo) {
+        return super.login(correo);
+    }
 
     @PUT
     @Path("{id}")
@@ -73,6 +80,9 @@ public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
     public List<Usuario> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }
+    
+    //login    
+    
 
     @GET
     @Path("count")
